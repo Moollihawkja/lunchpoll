@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="script.js"></script>
+	</head>
+	<body>
+		<h1>🍕 Lunch Poll 🍣</h1>
+		<form action='/~/lunchpoll/open/lunch' method='POST' enctype="multipart/form-data">
+			<label>What do you want for lunch?</label>
+			<select name='choice'>
+				<option value='🍝'>🍝 Pasta</option>
+				<option value='🍕'>🍕 Pizza</option>
+				<option value='🍜'>🍜 Ramen</option>
+				<option value='🥪'>🥪 Sandwich</option>
+				<option value='🍣'>🍣 Sushi</option>
+			</select>
+			<button>Submit</button>
+			<input type='hidden' name='redirecturl' value='/~/lunchpoll/index'>
+		</form>
+		<div id='results'></div>
+	</body>
+</html>
